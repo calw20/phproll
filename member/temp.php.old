@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+		<style>
+
+    </style>
+	</head>
+	<body>
+	
+		
+		<script>
+			function flipHere(me){
+				if (me.classList.contains('button-success')){
+					me.classList.add('button-error');
+					me.classList.remove('button-success'); 
+					me.innerHTML = 'Not Present'
+				} else {
+					me.classList.remove('button-error');
+					me.classList.add('button-success'); 
+					me.innerHTML = 'Present';}
+			}
+		</script>
+		<div style="margin-left:100px; margin-right:100px; margin-top:20px;">
+			<button class="button-xlarge pure-button button-success" onclick="flipHere(this)">Present</button>
+		</div>
+	</body>
+</html>
